@@ -367,10 +367,11 @@
                     <form name="subscribe_form" autocomplete="on" method="" >
                         <label class="footer-form_label">
                             Subscribe
+                            <input type="email" name="email" placeholder="E-mail" class="footer-form-input" required />
                         </label>
-                        <input type="email" name="email" placeholder="E-mail" class="footer-form-input" required />
+                        
                     
-                        <button type="submit" class="footer-form-button">Submit
+                        <button type="submit" class="footer-form-button">Subscribe
                             <svg class="footer-form-svgsubscribe">
                                 <use href="./images/icons.svg#submit"></use>
                             </svg>
@@ -395,44 +396,34 @@
                  
                                 <label class="form-label">
                                     
-                                        <span class="form-label-text">Name
-                                            <input type="text" class="form-input" name="full_name"   required />
-                                            <span class="form-input-iconbox">
-                                                <svg class="form-input-icon_person">
-                                                <use href="./images/icons.svg#person"></use>
-                                                </svg> 
-                                            </span>
-                                        </span>
+                                        <span class="form-label-text">Name </span>
+                                        <input type="text" class="form-input" name="full_name"   required />
+                                            <!-- <span class="form-input-iconbox"> -->
+                                        <svg class="form-input-icon">
+                                        <use href="./images/icons.svg#person"></use>
+                                        </svg> 
+                                            <!-- </span> -->
                                 </label>
 
                                 <label class="form-label">
-                                
-                                    <span class="form-label-text">Name
-                                        <input type="tel" class="form-input" name="phone_number" required />
-                                        <span class="form-input-iconbox">
-                                            <svg class="form-input-icon">
+                                    <span class="form-label-text">Phone</span>
+                                    <input type="tel" class="form-input" name="phone_number" required />
+                                    <svg class="form-input-icon">
                                                 <use href="./images/icons.svg#phone"></use>
-                                            </svg>
-                                        </span>
-                                    </span>
+                                    </svg>
                                 </label>
 
                                 <label class="form-label">
-                                
-                                    <span class="form-label-text">Name
-                                        <input type="email" class="form-input" name="email_add" required />
-                                        <span class="form-input-iconbox">
-                                            <svg class="form-input-icon">
-                                                <use href="./images/icons.svg#email"></use>
-                                            </svg>
-                                        </span>
-                                    </span>
+                                    <span class="form-label-text">Email</span>
+                                    <input type="email" class="form-input" name="email_add" required />
+                                    <svg class="form-input-icon">
+                                        <use href="./images/icons.svg#email"></use>
+                                    </svg>
                                 </label>
 
-                                <label class="form-label">
-                                    <span class="form-label-text">Comment 
-                                        <textarea name="comment" class="form-textarea" placeholder="Text input" required></textarea>
-                                    </span>
+                                <label class="form-label-textarea">
+                                    <span class="form-label-text">Comment</span>
+                                    <textarea name="comment" class="form-textarea" placeholder="Text input" required></textarea>
                                 </label>
                            
                             <label class="form-agree-box">
