@@ -183,8 +183,8 @@ img {
 }
 .hero{
     background-color: var(--navyblue);
-    background:  url(../images/people-office.jpg), var(--grey, rgba(46, 47, 66, 0.70));
-    background-blend-mode: overlay;
+    background: linear-gradient(to right,
+        var(--grey, rgba(46, 47, 66, 0.70),rgba(46, 47, 66, 0.70))), url(../images/people-office.jpg);
     background-size: cover;
     padding: 188px 0;
 }
@@ -345,7 +345,7 @@ img {
     fill: currentColor;
     border-radius: 4px;
     border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.40));
-    transition-property: border, fill;
+    transition-property: border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
@@ -446,6 +446,9 @@ img {
     width: 18px;
     height: 24px;
     fill: var(--navyblue, #2E2F42);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-agree-box {
@@ -487,12 +490,12 @@ img {
 /* ? */
 .modal-form{
     display: block;
-        width: 360px;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 8px;
-        padding-left: 24px;
-            padding-right: 24px;
+    width: 360px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 .modal-form-label {
     display: block;
